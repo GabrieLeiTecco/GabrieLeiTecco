@@ -1,0 +1,13 @@
+
+.btnhome{
+    cursor:pointer;
+    user-select: none;
+    margin-left: 3%;
+    color: white;
+    text-align: center;
+    font-size: 200% !important;
+}
+
+.navtopo{
+    background-color: black;
+}
