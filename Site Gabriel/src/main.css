@@ -11,3 +11,20 @@
 .navtopo{
     background-color: black;
 }
+
+.topico{
+    margin: 10%;
+    background-color: lightcyan;
+}
+
+.titulo-topico{
+    font-size: 40px;
+    display: inline;
+}
+
+.img-topico{
+    padding-top: 7vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: inline;
+}
