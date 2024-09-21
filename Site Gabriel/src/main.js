@@ -15,3 +15,20 @@ function sortearTitulo() {
         let titulo = document.getElementById('titulo').innerHTML = nomes[num]
     }
 }
+
+function opcoesMenu() {
+    document.getElementById('menu').classList.toggle('show')
+}
+
+window.onclick = function (){
+    if(!event.target.matches('.btn-menu')){
+        var menuDropdown = document.getElementsByClassName('conteudo-menu')
+        var i 
+        for (i = 0; i < menuDropdown.length; i++) {
+            var menuAberto = menuDropdown[i]
+            if (menuAberto.classList.contains('show') ){
+                menuAberto.classList.remove('show')
+            }
+        }
+    }
+}
