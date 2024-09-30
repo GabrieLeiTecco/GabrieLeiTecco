@@ -1,30 +1,27 @@
-
-.btnhome{
-    cursor:pointer;
-    user-select: none;
-    margin-left: 3%;
+/*TOPO*/
+.titulo{
     color: white;
-    text-align: center;
-    font-size: 200% !important;
-}
-
-.navtopo{
-    background-color: black;
-    height: 13vh !important;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .btn-menu{
     position: fixed;
     top: 0.2px;
     right: 2%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .conteudo-menu{
     display: none;
     position: fixed;
-    top: 90px;
+    top: 85px;
     right: 0px;
     background-color: black;
     z-index: 1;
@@ -37,4 +34,32 @@
     display: block;
 }
 
-.show {display: block;}
+.show {
+    display: block;
+}
+
+
+.navtopo{
+    background-color: black;
+    height: 13vh !important;
+}
+
+/*TOPICOS*/
+.topico{
+    display: inline-flex;
+    width: 60vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img_topico{
+    display: inline-flex;
+    justify-content: end !important;
+    width: 20vw;
+    justify-content: center;
+}
+
+.titulo-topico, .conteudo-topico, .img-topico{
+    border: 1px solid red;
+    background-color: antiquewhite;
+}
