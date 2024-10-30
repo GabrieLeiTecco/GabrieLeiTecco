@@ -27,6 +27,13 @@
     right: 0px;
     background-color: black;
     z-index: 1;
+    text-decoration: none;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;
 }
 
 .conteudo-menu a {
@@ -46,26 +53,66 @@
     height: 13vh !important;
 }
 
+/*CORPO*/
+.corpo{
+}
+
 /*TOPICOS*/
 .topico{
-    display: none;
     width: 80vw;
-    justify-content: center;
-    flex-wrap: wrap;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.topicos{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, lfr);
+    grid-template-rows: repeat(8, 5vw);
+    gap: 0.5rem;
+}
+
+.fig_topico {
+    overflow: hidden;
+}
+
+.imagem_topico {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.item01 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 5;
+}
+
+/*
+.imagem{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+
+.imagem:hover{
+    zoom: 110%;
 }
 
 .img_topico{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center !important;
-    width: 200px;
-    height: 200px;
+    overflow: hidden;
+    border:1px solid #CCC;
+    white-space: nowrap;
 }
 
 .titulo-topico, .conteudo-topico, .img-topico{
     border: 1px solid red;
     background-color: antiquewhite;
 }
+*/
 
 /*CORPO*/
 .corpo{

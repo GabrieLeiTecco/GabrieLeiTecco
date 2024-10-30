@@ -1,3 +1,7 @@
+var topicos = [
+    'sobre_mim', 'exp_pro', 'exp_acad'
+]
+
 var nomes = [
     'GABRIEL LEITE TECCO', 'BIEL', 'GABRIEL, O LEITE TECCO', 'LEITE', 'TECCO', 'EH O TECCAS', 'TECCAO',
     'GABS', 'GABRIEL, O GABRIEL', 'OCCET ETIEL LEIRBAG', 'ガブリエル', 'Senhor Gabriel',
@@ -65,3 +69,11 @@ function menu(){
     }
 }
 
+function mostrar(chave){
+    let topico = document.getElementById(topicos[chave])
+    if (topico.style.display == 'none') {
+        topico.style.display = 'block'
+    } else {
+        topico.style.display = 'none'
+    }
+}
