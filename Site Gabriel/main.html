@@ -12,27 +12,30 @@
             <h1 id="titulo" class="titulo" onclick="sortearTitulo()">Gabriel Leite Tecco</h1>
             <input type="image" src="./img/icone-menu.png" alt="img-menu" id="btn-menu" class="btn-menu" onclick="menu()">
             <div id="menu" class="conteudo-menu">
-                <a href=""^>Sobre mim</a>
-                <a href="">Experiências</a>
-                <a href="">Estudos</a>
+                <a href="#sobre_mim"^>Sobre mim</a>
+                <a href="#exp_pro">Experiências Profissionais</a>
+                <a href="#exp_acad">Experiências Acadêmicas</a>
             </div>
         </nav>
     </div>
     <div id="corpo" class="corpo"> <br><br>
-        <div class="img_topico"> <img src="./img/img_padrao.png" alt="Logo" class="img-topico"> </div>
+        <div class="img_topico"> <img src="./img/img_padrao.png" alt="Logo" class="img-topico" onclick="mostrar(0)"> </div>
+        <div class="img_topico"> <img src="./img/CF_logo.png" alt="Logo" class="img-topico" onclick="mostrar(1)"> </div>
+        <div class="img_topico"> <img src="./img/img_padrao.png" alt="Logo" class="img-topico" onclick="mostrar(2)"> </div>
+
         <div id="sobre_mim" class="topico">
-            <p class="titulo-topico">Cartaz Facil</p>
+            <p class="titulo-topico">TOPICO TOPICO</p>
             <p class="conteudo-topico">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="img_topico"> <img src="./img/img_padrao.png" alt="Logo" class="img-topico"> </div>
-        <div id="sobre_mim" class="topico">
-            <p class="titulo-topico">Cartaz Facil</p>
-            <p class="conteudo-topico">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+        <div id="exp_pro" class="topico">
+            <p class="titulo-topico">CARTAZ FACIL</p>
+            <p class="conteudo-topico">Minha primeira experiência profissional que tem sido fundamental para meu crescimento. Durante esse período, adquiri conhecimentos que vão desde o atendimento ao cliente até processos empresariais como vendas, marketing, operações e gestão de estoque. Essa oportunidade tem me permitido entender melhor o funcionamento do mercado de trabalho e, principalmente, como posso contribuir de forma significativa. Além disso, desenvolvi resiliência e uma nova perspectiva sobre desafios: aprendi que com paciência e prática, qualquer habilidade pode ser aprimorada, transformando dificuldades em oportunidades de crescimento profissional.</p>
         </div>
-        <div class="img_topico"> <img src="./img/img_padrao.png" alt="Logo" class="img-topico"> </div>
-        <div id="sobre_mim" class="topico">
-            <p class="titulo-topico">Cartaz Facil</p>
-            <p class="conteudo-topico">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+        <div id="exp_acad" class="topico">
+            <p class="titulo-topico">ETEC</p>
+            <p class="conteudo-topico">Sou formado em Desenvolvimento de Sistemas pela ETEC Zona Leste, onde desenvolvi habilidades em criação de projetos e solução de problemas por meio da lógica de programação. Meu principal interesse sempre foi o desenvolvimento de sites e softwares, embora tenha adquirido uma base sólida também em hardware e redes. Durante o curso, obtive experiência com diversas tecnologias, incluindo Java, JavaScript, Python, SQL, PHP, HTML e CSS para desenvolvimento de sistemas, além de C, C++, Arduino e conceitos de redes em Linux e servidores. Sou grato à ETEC por ter proporcionado uma formação abrangente que ampliou minhas oportunidades no mercado de tecnologia. </p>
+            <p class="titulo-topico">DESCOMPLICA</p>
+            <P class="conteudo-topico">Atualmente, estou cursando Sistemas para Internet na faculdade Descomplica, seguindo minha paixão pela programação de sites, que começou aos 15 anos. Escolhi esse curso por meu interesse em HTML, JavaScript e CSS, e ele tem sido fundamental para aprofundar meus conhecimentos. Além do aprimoramento técnico, estou desenvolvendo habilidades essenciais em criação de projetos, organização de equipes e utilização de frameworks para desenvolvimento web.</P>
         </div>
     </div>    
 </body>
