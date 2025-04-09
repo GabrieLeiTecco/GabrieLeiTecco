@@ -34,6 +34,14 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    user-select: none;
+    cursor: pointer;
+}
+
+.conteudo-menu a:hover {
+    font-size: 110%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .show {
@@ -49,17 +57,30 @@
 /*TOPICOS*/
 .topico{
     display: none;
-    width: 80vw;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100vw;
+    text-align: center;
+    padding: 0 10vw 0 10vw;
 }
 
 .img_topico{
     display: inline-flex;
-    flex-direction: row;
-    justify-content: center !important;
-    width: 200px;
-    height: 200px;
+    justify-content: space-between;
+}
+
+.img-topico{
+    width: 20vw;
+    height: 40vh;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.titulo-topico{
+    font-size: 50px;
+    font-family: ;
+    font-weight: bolder;
 }
 
 .titulo-topico, .conteudo-topico, .img-topico{
@@ -70,4 +91,5 @@
 /*CORPO*/
 .corpo{
     background-color: rgb(75, 75, 75);
+    text-align: center;
 }

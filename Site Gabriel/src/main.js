@@ -71,9 +71,18 @@ function menu(){
 
 function mostrar(chave){
     let topico = document.getElementById(topicos[chave])
-    if (topico.style.display == 'none') {
-        topico.style.display = 'block'
-    } else {
-        topico.style.display = 'none'
+    for (let i = 0; i < topicos.length; i++) {
+        let outrosTopicos = document.getElementById(topicos[i])
+        if (topico.style.display == 'none' || topico.style.display == "") {
+            topico.style.display = 'block'
+            if (outrosTopicos != topico) {
+                outrosTopicos.style.display = 'none'
+            }
+        }else {
+            topico.style.display = 'none'
+            if (outrosTopicos != topico) {
+                outrosTopicos.style.display = 'none'
+            }
+        }    
     }
 }
