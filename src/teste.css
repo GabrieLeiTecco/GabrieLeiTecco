@@ -1,0 +1,120 @@
+/*TOPO*/
+.titulo{
+    color: white;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 0 10px 0 10px;
+}
+
+.btn-menu{
+    position: fixed;
+    top: 0.2px;
+    right: 2%;
+    width: 80px;
+    height: 80px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 0 0 0 10px;
+}
+
+.conteudo-menu{
+    display: none;
+    position: fixed;
+    top: 85px;
+    right: 0px;
+    background-color: black;
+    z-index: 1;
+    text-decoration: none;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;
+}
+
+.conteudo-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+
+.navtopo{
+    background-color: black;
+    height: 13vh !important;
+}
+
+/*CORPO*/
+.corpo{
+}
+
+/*TOPICOS*/
+.topico{
+    width: 80vw;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.topicos{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, lfr);
+    grid-template-rows: repeat(8, 5vw);
+    gap: 0.5rem;
+}
+
+.fig_topico {
+    overflow: hidden;
+}
+
+.imagem_topico {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.item01 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 5;
+}
+
+/*
+.imagem{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+
+.imagem:hover{
+    zoom: 110%;
+}
+
+.img_topico{
+    overflow: hidden;
+    border:1px solid #CCC;
+    white-space: nowrap;
+}
+
+.titulo-topico, .conteudo-topico, .img-topico{
+    border: 1px solid red;
+    background-color: antiquewhite;
+}
+*/
+
+/*CORPO*/
+.corpo{
+    background-color: rgb(75, 75, 75);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <div id="topo" class="topo">
+        <nav class="navtopo navbar navbar-expand-lg">
+            <h1 id="titulo" class="titulo" onclick="sortearTitulo()">Gabriel Leite Tecco</h1>
+            <input type="image" src="./img/icone-menu.png" alt="img-menu" id="btn-menu" class="btn-menu" onclick="menu()">
+            <div id="menu" class="conteudo-menu">
+                <a onclick="mostrar(0)">Sobre mim</a>
+                <a onclick="mostrar(1)">Experiências Profissionais</a>
+                <a onclick="mostrar(2)">Experiências Acadêmicas</a>
+            </div>
+        </nav>
+    </div>
+    <div id="corpo" class="corpo"> <br><br>
+        <div class="img_topico"> <img src="./img/sobre_mim.png" alt="Logo" class="img-topico" onclick="mostrar(0)"> </div>
+        <div class="espaco"></div>
+        <div class="img_topico"> <img src="./img/exp_prof.png" alt="Logo" class="img-topico" onclick="mostrar(1)"> </div>
+        <div class="espaco"></div>
+        <div class="img_topico"> <img src="./img/exp_acad.png" alt="Logo" class="img-topico" onclick="mostrar(2)"> </div>
+
+        <div id="sobre_mim" class="topico">
+            <p class="titulo-topico">SOBRE MIM</p>
+            <p class="conteudo-topico">Sou uma pessoa comunicativa, com facilidade para trabalhar em equipe e grande apreço por aprender através da troca de experiências. Cresci em um ambiente que valorizava o estudo e a dedicação, inspirado pelo exemplo dos meus irmãos e pelo esforço dos meus pais — valores que carrego comigo até hoje. Tenho grande interesse por novas tecnologias e inovação, especialmente nas áreas de programação e inteligência artificial. Estou sempre em busca de aprendizado e novas alternativas para construir o que eu quero, nada melhor que inovar para melhorar!</p>
+        </div>
+        <div id="exp_pro" class="topico">
+            <p class="titulo-topico">CARTAZ FACIL</p>
+            <p class="conteudo-topico">Minha primeira experiência profissional que tem sido fundamental para meu crescimento. Durante esse período, adquiri conhecimentos que vão desde o atendimento ao cliente até processos empresariais como vendas, marketing, operações e gestão de estoque. Essa oportunidade tem me permitido entender melhor o funcionamento do mercado de trabalho e, principalmente, como posso contribuir de forma significativa. Além disso, desenvolvi resiliência e uma nova perspectiva sobre desafios: aprendi que com paciência e prática, qualquer habilidade pode ser aprimorada, transformando dificuldades em oportunidades de crescimento profissional.</p>
+        </div>
+        <div id="exp_acad" class="topico">
+            <p class="titulo-topico">ETEC</p>
+            <p class="conteudo-topico">Sou formado em Desenvolvimento de Sistemas pela ETEC Zona Leste, onde desenvolvi habilidades em criação de projetos e solução de problemas por meio da lógica de programação. Meu principal interesse sempre foi o desenvolvimento de sites e softwares, embora tenha adquirido uma base sólida também em hardware e redes. Durante o curso, obtive experiência com diversas tecnologias, incluindo Java, JavaScript, Python, SQL, PHP, HTML e CSS para desenvolvimento de sistemas, além de C, C++, Arduino e conceitos de redes em Linux e servidores. Sou grato à ETEC por ter proporcionado uma formação abrangente que ampliou minhas oportunidades no mercado de tecnologia. </p>
+            <p class="titulo-topico">DESCOMPLICA</p>
+            <P class="conteudo-topico">Atualmente, estou cursando Sistemas para Internet na faculdade Descomplica, seguindo minha paixão pela programação de sites, que começou aos 15 anos. Escolhi esse curso por meu interesse em HTML, JavaScript e CSS, e ele tem sido fundamental para aprofundar meus conhecimentos. Além do aprimoramento técnico, estou desenvolvendo habilidades essenciais em criação de projetos, organização de equipes e utilização de frameworks para desenvolvimento web.</P>
+        </div>
+    </div>   
+</body>
+</html>
+
+<script src="./src/main.js"></script>
