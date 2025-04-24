@@ -49,7 +49,7 @@ const colors = [
 
 // ======== RANDOM TITLE GENERATOR ========
 function drawRandomTitle() {
-    const titleElement = document.getElementById('titulo');
+    const titleElement = document.getElementById('tittle');
     const nameIndex = Math.floor(Math.random() * titleNames.length);
     const fontIndex = Math.floor(Math.random() * fonts.length);
     const colorIndex = Math.floor(Math.random() * colors.length);

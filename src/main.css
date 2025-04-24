@@ -13,16 +13,16 @@ body {
 }
 
 /* ========== HEADER / NAVIGATION ========== */
-#topo {
+#header {
     width: 100%;
 }
 
-.navtopo {
+.navheader {
     background-color: black;
     height: 13vh !important;
 }
 
-.titulo {
+.tittle {
     color: white;
     cursor: pointer;
     padding: 0 10px;
